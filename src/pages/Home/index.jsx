@@ -33,7 +33,10 @@ const Home = () => {
 
   return (
     <>
-      <div ref={counterRef} className="bg-home flex items-center justify-center">
+      <div
+        ref={counterRef}
+        className="bg-home flex items-center justify-center"
+      >
         <div className="text-white home-content text-center px-24">
           <h1 className="text-4xl">
             Count effortlessly with our intuitive Counter App. Simple,
@@ -48,11 +51,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div
-      
-        id="counter"
-        className="counter my-16 py-8 text-center min-h-screen"
-      >
+      <div id="counter" className="counter my-16 py-8 text-center min-h-screen">
         <p>
           Use the Counter App to effortlessly keep track of numbers, scores, and
           counts. It's your go-to tool for accurate and efficient counting,
@@ -95,7 +94,7 @@ const Home = () => {
       {/* {showBackToTop && ( */}
       <button
         onClick={handleScroll}
-        className="fixed bottom-5 right-5 bg-orange-500 z-50 w-12 h-12 rounded-md flex items-center justify-center"
+        className="fixed bottom-5 right-5 bg-orange-500 z-50 w-12 h-12 rounded-md flex items-center justify-center hover:bg-orange-600"
       >
         <FaChevronUp color="white" size="20px" />
       </button>
